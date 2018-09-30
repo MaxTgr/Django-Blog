@@ -1,0 +1,11 @@
+{% extends 'posts/layout.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        <h1 class="is-size-2">{{post.title}}</h1>
+        <p>{{post.date}}</p>
+        <br/>
+        <p>{{post.body}}</p>
+        <hr>
+    {% endfor %}
+{% endblock %}
